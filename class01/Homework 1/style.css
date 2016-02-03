@@ -5,6 +5,8 @@ body {
   border-bottom: 5px solid black;
   border-top: 5px solid black;
   font-family: Helvetica;
+  line-height: 1.6;
+  font-size: 18px;
 }
 
 .commonstyles a {
@@ -19,10 +21,11 @@ body {
 }
 
 .commonstyles h1 {
-
+  font-family: arial;
 }
 
 .commonstyles h2 {
+  font-family: arial;
 }
 
 .commonstyles h3 {
@@ -38,6 +41,7 @@ body {
   font-family: georgia;
   margin-top: 0;
   margin-bottom: 27px;
+  text-align: justify;
 }
 
 .commonstyles ul {
@@ -70,27 +74,44 @@ body {
   float: right;
 }
 
-.toc {
+.commonstyles .seealso {
+  text-indent: 20px;
+}
 
+.toc {
   max-width: 300px;
   float:right;
   margin: 0 0 20px 20px;
+  line-height: 22px;
+}
+
+.toc h2 {
+  text-indent: 20px;
 }
 
 .toc .toclevel-1 {
-
+  font-size: 16px;
+  color: black;
 }
 
 .toc .toclevel-1 > a {
-
+  font-size: 16px;
+  color: blue;
+  font-weight: bold;
 }
 
 .toc .toclevel-2 {
-
+  font-size: 14px;
+  color: black;
 }
 
 .toc .toclevel-2 > a {
+  font-size: 14px;
+  color: gray;
+}
 
+.datatable a {
+  color: black;
 }
 
 .datatable td {
