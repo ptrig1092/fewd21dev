@@ -1,0 +1,73 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: century gothic, helvetica, sans-serif;
+	line-height: 1.5;
+	background: #FFFFF0;
+}
+
+h1 {
+	background: #F5F5F5;
+	padding: 15px;
+	border: 5px solid black;
+	text-align: center;
+}
+
+p {
+	color: white;
+	background: blue;
+	border: 5px solid black;
+	padding: 10px;
+}
+
+code {
+	color: black;
+	background: white;
+	padding: 2px 5px;
+	border: 1px solid black;
+}
+
+.different code {
+	background: green;
+}
+
+.sitenav {
+
+}
+
+.sitenav li {
+	display: inline;
+}
+
+.sitenav li:focus {
+	border: 1px dotted black;
+}
+
+.sitenav button {
+	background: gray;
+	padding: 16px 22px;
+	text-align: center;
+	font-size: 26px;
+	color: white;
+	border: none;
+}
+
+.sitenav button:hover {
+	background: purple;
+}
+
+.sitenav .buttons a {
+	color: white;
+	font: normal;
+	text-decoration: none;
+}
+
+
+
+
+

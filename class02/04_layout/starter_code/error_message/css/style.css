@@ -1,0 +1,23 @@
+body {
+	font-family: georgia, sans-serif;
+	line-height: 1.5;
+	background: #FFFFF0;
+	margin: 30px;
+	padding-left: 20px;
+}
+
+p,div {
+	margin-left: 18px;
+}
+
+h2 {
+	font-variant: small-caps;
+}
+
+.message {
+	margin-left: 30px;
+}
+
+.error {
+	margin-left: 18px;
+}
