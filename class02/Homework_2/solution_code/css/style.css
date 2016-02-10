@@ -125,7 +125,7 @@ h3 {
   margin: 30px 0 0 80px;
 }
 #testimonial {
-  background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
+  background: url(../images/testimonial_bg.jpg);
   padding: 70px 0 70px;
   color: #fff;
 }
