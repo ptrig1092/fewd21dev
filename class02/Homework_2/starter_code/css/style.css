@@ -97,6 +97,10 @@ header .logotype {
     text-decoration: none;
 }
 
+.order:hover {
+    color: #0099CC;
+}
+
 .benefits {
     background: cover;
     padding: 105px 130px;
@@ -159,6 +163,10 @@ header .logotype {
     background: #033048;
 }
 
+.signUp:hover {
+    color: #0099CC;
+}
+
 footer {
     background: #121212;
     background-size: cover;
@@ -183,6 +191,22 @@ footer ul li {
     padding: 30px;
 }
 
+nav li a {
+    color: white;
+    font-size: 36px;
+}
+
+.fa-twitter {
+    padding-right: 20px;
+}
+
+.fa-facebook {
+    padding-left: -20px;
+}
+
+nav li a:hover {
+    color: #3366FF;
+}
 
 .copyright {
     font-weight: 600;
@@ -192,11 +216,5 @@ footer ul li {
     padding-top: 30px;
 }
 
-nav img:hover:not(.twitter) {
-    opacity: 0.3;
-}
 
-nav img:hover:not(.facebook) {
-    opacity: 0.3;
-}
 
