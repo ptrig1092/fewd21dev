@@ -13,12 +13,26 @@ body {
 }
 
 .container {
-	width: 100%;
-	margin: 0 auto;
+	width: 90%;
+	margin: 0 60px 0 60px;
 }
 
 a {
 	text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
 }
 
 /*--Header Styling--*/
@@ -26,19 +40,19 @@ a {
 header {
 	background: black;
 	color: yellow;
-	border-bottom: 4px solid yellow;
+	border-bottom: 2px solid yellow;
 }
 
 .logo {
 	font-family: 'Merriweather';
-	font-size: 48px;
-	font-weight: 400;
-	padding: 20px 0 0 30px;
+	font-size: 36px;
+	font-weight: 700;
+	padding: 10px 0 0 30px;
 	margin: 0;
 }
 
 .headerLinks{
-	padding: 0 40px 10px 0;
+	padding: 10px 40px 30px 0;
 	text-align: right;
 }
 
@@ -48,17 +62,11 @@ header {
 
 .headerLinks a {
 	color: white;
-	padding: 0 15px 0 15px;
-	font-size: 28px;
+	padding: 0 10px 0 10px;
+	font-size: 24px;
 }
 
-.headerLinks li:first-child {
-	font-family: 'oswald';
-	text-transform: uppercase;
-	font-weight: 700;
-}
-
-.headerLinks li:nth-child(2) {
+.headerLinks li:first-child, li:nth-child(2) {
 	font-family: 'oswald';
 	text-transform: uppercase;
 	font-weight: 700;
@@ -67,40 +75,149 @@ header {
 /*--Tagline Styling--*/
 
 .tagLine {
-	font-family: 'Source-Sans-Pro';
+	font-family: 'Merriweather';
 	font-style: italic;
-	font-size: 32px;
+	font-size: 24px;
 	color: black;
 	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+	background-color: lightgray;
 }
+
 
 .tagLine del {
-	color: lightgrey;
+	text-decoration: none;
+	color: gray;
+	text-decoration: line-through;
+	text-decoration-
 }
 
-.tagLine ins 
+.tagLine ins {
+	display: inline-block;
+	text-decoration: none;
+	border-bottom: 2px solid yellow;
+}
 
 /*--Background Section Styling--*/
 
-.clearfix {
-	overflow: auto;
-	zoom: 1;
+.classroom {
+	background-image: url('../images/coworking.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    width: 100%;
 }
 
-.clearfix {
-	background-size: cover;
+.match {
+	width: 33%;
+	border: 1px solid black 0.7;
+	background-color: rgba(255,255,255,0.8);
+	float: right;
+	padding: 30px;
+	box-shadow: 0 0 3px #333;
 }
 
+.matchHeader {
+	margin: 0;
+	color: blue;
+	font-size: 24px;
+}
 
+.matchPP {
+	margin: 0;
+	color: black;
+	font-size: 16px;
+	line-height: 1.4;
+	padding: 0 0 20px 0;
+}
+
+.matchNav {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	color: black;
+	background-color: yellow;
+	border-radius: 5px;
+	padding: 15px;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+	box-shadow: inset 0 -3px 0 rgba(0,0,0,0.2);
+	transition-property: box-shadow;
+	transition-duration: 200ms;
+}
+
+.matchNav:hover {
+	box-shadow: inset 0 -3px 0 rgba(0,0,0,0.1);
+}
 
 /*--Three Column Section--*/
 
+.linkGroup {
+	background-color: white;
+	background-size: cover;
+	padding: 20px 0;
+}
+
+.link {
+	width: 33.334%;
+	float: left;
+	padding: 0 15px;
+	margin: 0;
+	border-right: 1px solid lightgray;
+}
+
+.linkHeader {
+	margin: 0;
+	padding: 0;
+	color: blue;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.linkPP {
+	margin: 0;
+	padding: 10px 0 20px 0;
+	text-align: justify;
+	color: black;
+	line-height: 1;
+	font-size: 16px;
+}
+
+.linkNav {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	color: black;
+	background-color: lightgray;
+	border-radius: 5px;
+	padding: 15px;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+	box-shadow: inset 0 -3px 0 rgba(0,0,0,0.2);
+	transition-property: box-shadow;
+	transition-duration: 200ms;
+}
+
+.linkNav:hover {
+	box-shadow: inset 0 -3px 0 rgba(0,0,0,0.1);
+}
+
 /*--Footer Styling--*/
 
+footer {
+	background-color: black;
+}
 
-
-
-
+.copyright {
+	margin: 0;
+	color: white;
+	font-family: 'Merriweather';
+	font-size: 16px;
+	font-weight: 400;
+	padding: 20px 0 30px 20px;
+}
 
 
 
