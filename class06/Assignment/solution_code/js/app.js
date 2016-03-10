@@ -3,6 +3,7 @@ $(document).ready(function() {
   for(i=0;i<cities.length;i++) {
     $('#city-type').append('<option value="' + cities[i] + '">' + cities[i] + '</option>');
   }
+  
   $('form').on('change', '#city-type',function(){
     var city = $('#city-type').val();
     if(city == 'NYC') {
