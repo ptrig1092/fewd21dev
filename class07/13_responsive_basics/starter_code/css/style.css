@@ -1,0 +1,176 @@
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+ 	box-sizing: inherit;
+}
+
+.container {
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+header,
+header nav a,
+header span,
+.empty-section,
+.box .inner,
+footer {
+	border: 2px solid #333;
+}
+
+header,
+section,
+footer {
+	margin-bottom: 10px;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	padding: 20px 75px;
+	display: block;
+	float: left;
+	margin-right: 2px;
+}
+
+header nav {
+	float: left;
+}
+
+header span {
+	font-size: 3em;
+	color: green;
+	display: block;
+	float: right;
+	display: none;
+}
+
+header span a {
+	text-decoration: none;
+}
+
+/* Section */
+.empty-section {
+	padding: 100px 0;
+}
+
+/* Box */
+section,
+footer {
+	padding: 20px 0;
+}
+
+section .box {
+	padding: 10px;
+	float: left;
+	width: 25%;
+}
+
+footer .box {
+	float: left;
+	width: 33.33%;
+	padding: 10px;
+}
+
+.box .inner {
+	padding: 75px;
+}
+
+@media screen and (max-width: 784px) { 
+	footer .box {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) { 
+
+	header span {
+		display: block;
+
+	}
+
+	header .active {
+		display: none;
+	}
+
+	header nav {
+		float: right;
+	}
+
+	nav ul li {
+		display: block;
+	}
+
+	nav ul li a {
+		float: none;
+		margin: none;
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 670px) { 
+	
+	section .box {
+		width: 50%;
+	}
+
+}
+
+@media screen and (max-height: 150px) { 
+	
+	.empty-section {
+		padding: 50px 0;
+	}
+
+}
+
+
+/* Cool active states of the body */
+
+body .active header nav {
+	display: block;
+}
+
+body.active {
+	background: purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
