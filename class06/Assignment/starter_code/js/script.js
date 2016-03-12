@@ -1,10 +1,15 @@
+// Define the option list in an array
 var cities = ['NYC','SF','LA','ATX','SYD'];
 
+// Define page level functions
 $(document).ready(function() {
+	// For loop -> for i increasing from 0 to the end of the array, apped the value of the option tag to 
+
 	for (i = 0; i < cities.length; i++) {
 		$('#city-type').append('<option value="' + cities[i] + '">' + cities[i] + '</option>');
 	}
 
+	//  
 	$('form').on('change','#city-type',function() {
 		
 		var city = $('#city-type').val();
